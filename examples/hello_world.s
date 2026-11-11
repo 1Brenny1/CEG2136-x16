@@ -1,0 +1,35 @@
+ORG 0
+BUN _Start
+
+STRING_PTR: ADR STRING
+STRING_SIZE: DEC -13
+STRING:
+    HEX 48
+    HEX 65
+    HEX 6C
+    HEX 6C
+    HEX 6F
+    HEX 2C
+    HEX 20
+    HEX 57
+    HEX 6F
+    HEX 72
+    HEX 6C
+    HEX 64
+    HEX 21
+
+
+_Start:
+LOOP:
+    LDA STRING_PTR I
+    OUT
+    ISZ STRING_SIZE
+    BUN ISNT_EOF
+    BUN IS_EOF
+
+ISNT_EOF:
+    ISZ STRING_PTR
+    BUN LOOP
+
+IS_EOF:
+    HLT

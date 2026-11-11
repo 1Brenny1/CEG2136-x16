@@ -1,0 +1,3 @@
+ORG 0
+BUN __EntryPoint__
+VIRT_REG: HEX 0000

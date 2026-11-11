@@ -1,0 +1,36 @@
+package emulator
+
+const (
+	// MRI
+	MRI_MASK uint16 = 0x7000
+
+	INSTR_AND uint16 = 0x0000
+	INSTR_ADD uint16 = 0x1000
+	INSTR_LDA uint16 = 0x2000
+	INSTR_STA uint16 = 0x3000
+	INSTR_BUN uint16 = 0x4000
+	INSTR_BSA uint16 = 0x5000
+	INSTR_ISZ uint16 = 0x6000
+
+	// RRI
+	INSTR_CLA uint16 = 0x7800
+	INSTR_CLE uint16 = 0x7400
+	INSTR_CMA uint16 = 0x7200
+	INSTR_CME uint16 = 0x7100
+	INSTR_CIR uint16 = 0x7080
+	INSTR_CIL uint16 = 0x7040
+	INSTR_INC uint16 = 0x7020
+	INSTR_SPA uint16 = 0x7010
+	INSTR_SNA uint16 = 0x7008
+	INSTR_SZA uint16 = 0x7004
+	INSTR_SZE uint16 = 0x7002
+	INSTR_HLT uint16 = 0x7001
+
+	// IOI
+	INSTR_INP uint16 = 0xF800
+	INSTR_OUT uint16 = 0xF400
+	INSTR_SKI uint16 = 0xF200
+	INSTR_SKO uint16 = 0xF100
+	INSTR_ION uint16 = 0xF080
+	INSTR_IOF uint16 = 0xF040
+)
