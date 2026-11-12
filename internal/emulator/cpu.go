@@ -121,7 +121,7 @@ func (cpu *CPU) ExecuteMemoryReferenceInstructions() {
 	case cpu.D[1]: // ADD
 		cpu.DR = cpu.Memory[cpu.AR]
 
-		result := uint32(cpu.AR) + uint32(cpu.DR)
+		result := uint32(cpu.AC) + uint32(cpu.DR)
 
 		cpu.AC = uint16(result)
 		cpu.E = result > 0xFFFF
